@@ -1,0 +1,183 @@
+/*-------------------------------------------------------------------------------------------*
+*                                       MAIN CSS                                             *
+*-------------------------------------------------------------------------------------------*/
+
+/* Import Section
+=================================================================== */
+@import url("slider.css");                  /* Slider */
+@import url("navigation.css");              /* Navigation bar */
+@import url("sections.css");                /* Audio, sample, about me and contact sections */
+@import url("footer.css");                  /* Footer */
+
+/* Reset rules
+=================================================================== */
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Headers
+=================================================================== */
+h1 {
+    font-size: 36px;
+    line-height: 40px;
+}
+
+h2 {
+    font-size: 20px;
+    line-height: 40px;
+}
+
+h3 {
+    font-size: 18px;
+    line-height: 32px;
+}
+
+h4 {
+    font-size: 13px;
+    line-height: 30px;
+}
+
+h5 {
+    font-size: 12px;
+    line-height: 26px;
+}
+
+h6 {
+    font-size: 11px;
+    line-height: 24px;
+}
+
+/* Lists
+=================================================================== */
+ul { list-style: none outside; }
+ol { list-style: decimal; }
+ol, ul.square, ul.circle, ul.disc { margin-left: 30px; }
+ul.square { list-style: square outside; }
+ul.circle { list-style: circle outside; }
+ul.disc { list-style: disc outside; }
+ul ul, ul ol,
+ol ol, ol ul {}
+ul ul li, ul ol li,
+ol ol li, ol ul li {}
+
+/* Body
+=================================================================== */
+body {
+    font-family: 'Raleway', sans-serif;
+    line-height: 0;
+}
+
+/* Navbar mobile devices */
+@media (min-width: 768px) {
+    body {
+        padding: 0 0 0 0 !important;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        padding: 50px 0 0 0 !important;
+        /*padding: 0 0 0 0 !important;*/
+
+    }
+}
+
+/* Web components - Buttons
+=================================================================== */
+.inherit {
+    color: inherit;
+    background-color: inherit;
+}
+
+/* Words counter
+=================================================================== */
+.counter {
+    color: black;
+}
+
+.warning {
+    color: #FBB129;
+}
+
+.error {
+    color: #E33737;
+}
+
+.counter, .warning, .error {
+    float: right;
+}
+
+.message > .counter, .message > .warning, .message > .error {
+    padding-bottom: 25px;
+}
+
+/* Mail response
+=================================================================== */
+
+#response {
+    margin-bottom: 40px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#response .success, #response .failure {
+    color: black;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    width: 50%;
+
+    /* Alert centered */
+    float: none;
+    display: inline-block;
+    *display: inline; /* ie7 fix */
+    *zoom: 1; /* hasLayout ie7 trigger */
+}
+
+/* Media queries for custom slider
+=================================================================== */
+
+@media (min-width: 980px) and (max-width: 1500px) {
+
+    #response .success, #response .failure {
+        width: 65%;
+    }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+
+    #response .success, #response .failure {
+        width: 65%;
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+
+    #response .success, #response .failure {
+        width: 75%;
+    }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+
+    #response {
+        margin-bottom: 20px;
+    }
+
+    #response .success, #response .failure {
+        font-size: 12px;
+        width: 85%;
+    }
+}
+
+
+

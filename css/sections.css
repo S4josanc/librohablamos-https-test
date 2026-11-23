@@ -1,0 +1,956 @@
+/*-------------------------------------------------------------------------------------------*
+*                           AUDIO, SAMPLE, ABOUT ME AND CONTACT CSS                          *
+*-------------------------------------------------------------------------------------------*/
+
+/* Title style
+=================================================================== */
+#audio {
+    background: indianred;
+    color: #fff;
+}
+
+#sample {
+    /*background: #8ecdc1;*/
+    background-color: #96b877;
+    color: #fff;
+}
+
+#aboutMe {
+    background: rgba(255, 229, 141, 1);
+    color: black;
+}
+
+#contact, #buy {
+    background-color: whitesmoke;
+    color: black;
+}
+
+#page-title, #page-title-sample, #page-title-aboutMe, #page-title-contact, #page-title-buy {
+    width: 100%;
+    text-align: center;
+    display: table;
+    vertical-align: middle;
+}
+
+#page-title h2, #page-title-sample h2, #page-title-aboutMe h2, #page-title-contact h2, #page-title-buy h2 {
+    font-size: 25px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 100px;
+}
+
+.page-title-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    margin: 0 ;
+    padding: 0;
+}
+
+/* Audio lines
+=================================================================== */
+#page-title h2:before,
+#page-title h2:after {
+    display: inline-block;
+    height: 1px;
+    content: "";
+    width: 40%;
+    position: absolute;
+    top: 2em;
+}
+
+/* Sample and about me sections */
+#page-title-sample h2:before,
+#page-title-sample h2:after,
+#page-title-aboutMe h2:before,
+#page-title-aboutMe h2:after,
+#page-title-contact h2:before,
+#page-title-contact h2:after,
+#page-title-buy h2:after,
+#page-title-buy h2:before {
+    display: inline-block;
+    height: 1px;
+    content: "";
+    width: 35%;
+    position: absolute;
+    top: 2em;
+}
+
+#page-title h2:before, #page-title-sample h2:before {
+    background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* IE10+ */
+    background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+    left: 0;
+}
+
+#page-title h2:after, #page-title-sample h2:after {
+    background: -moz-linear-gradient(left,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
+    background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+    right: 0;
+    left: auto;
+}
+
+/* About me sections */
+#page-title-aboutMe h2:before, #page-title-contact h2:before, #page-title-buy h2:before {
+    background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgb(0, 0, 0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(100%, rgb(0, 0, 0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%, rgb(0, 0, 0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  rgba(255,255,255,0) 0%, rgb(0, 0, 0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  rgba(255,255,255,0) 0%, rgb(0, 0, 0) 100%); /* IE10+ */
+    background: linear-gradient(to right,  rgba(255,255,255,0) 0%, rgb(0, 0, 0) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+    left: 0;
+}
+
+#page-title-aboutMe h2:after, #page-title-contact h2:after, #page-title-buy h2:after {
+    background: -moz-linear-gradient(left, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgb(0, 0, 0)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  rgb(0, 0, 0) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  rgb(0, 0, 0) 0%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  rgb(0, 0, 0) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
+    background: linear-gradient(to right,  rgb(0, 0, 0) 0%,rgba(255,255,255,0) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+    right: 0;
+    left: auto;
+}
+
+/* Sections style
+=================================================================== */
+/* Important */
+.divAudio {
+    /*padding: 0 0 4% 0 !important;*/
+    margin-top: 15px;
+}
+
+.divSample {
+    margin-top: 15px;
+}
+
+.divAboutMe {
+    margin-top: 15px;
+}
+
+.section {
+    /*padding: 4% 1% 3% 1% !important;*/
+    padding-left: 2% !important;
+    padding-right: 2% !important;
+}
+
+/* Buy it section */
+.box > .icon {
+    text-align: center;
+    position: relative;
+}
+
+.box > .icon > .image {
+    position: relative;
+    z-index: 2;
+    margin: auto;
+    width: 88px;
+    height: 88px;
+    border: 8px solid white;
+    line-height: 88px;
+    border-radius: 50%;
+    background: #63B76C;
+    vertical-align: middle;
+}
+
+.box > .icon > .image-ebook {
+    position: relative;
+    z-index: 2;
+    margin: auto;
+    width: 88px;
+    height: 88px;
+    border: 8px solid white;
+    line-height: 88px;
+    border-radius: 50%;
+    background: #525252;
+    vertical-align: middle;
+}
+
+.box > .icon > .image-pdf {
+    position: relative;
+    z-index: 2;
+    margin: auto;
+    width: 88px;
+    height: 88px;
+    border: 8px solid white;
+    line-height: 88px;
+    border-radius: 50%;
+    background: #dd4747;
+    vertical-align: middle;
+}
+
+.box > .icon > .image-kindle {
+    position: relative;
+    z-index: 2;
+    margin: auto;
+    width: 88px;
+    height: 88px;
+    border: 8px solid white;
+    line-height: 72px;
+    font-size: 16px;
+    border-radius: 50%;
+    background: #cd7e23;
+    vertical-align: middle;
+}
+
+.box > .icon:hover > .image,
+.box > .icon:hover > .image-kindle,
+.box > .icon:hover > .image-pdf,
+.box > .icon:hover > .image-ebook {
+    background: #828282;
+    color: white;
+}
+
+.box > .icon > .image > i,
+.box > .icon > .image-pdf > i,
+.box > .icon > .image-kindle > i,
+.box > .icon > .image-ebook > i {
+    font-size: 36px !important;
+    color: #fff !important;
+}
+
+.box > .icon:hover > .image > i,
+.box > .icon:hover > .image-pdf > i,
+.box > .icon:hover > .image-kindle > i,
+.box > .icon:hover > .image-ebook > i {
+    color: white !important;
+}
+
+.box > .icon > .info {
+    margin-top: -24px;
+    background: rgba(0, 0, 0, 0.04);
+    border: 1px solid #e0e0e0;
+    padding: 15px 0 15px 0;
+}
+
+.box > .icon:hover > .info {
+    background: rgba(0, 0, 0, 0.04);
+    border-color: #e0e0e0;
+    color: white;
+}
+
+.box > .icon > .info > h3.title {
+    font-size: 15px;
+    font-weight: 500;
+    padding: 15px 0 20px 0;
+    text-transform: uppercase;
+}
+
+.box > .icon > .info > p {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.5em;
+    margin: 20px;
+    text-align: justify;
+}
+
+.box > .icon:hover > .info > h3.title,
+.box > .icon:hover > .info > p,
+.box > .icon:hover > .info > .more > a {
+    color: #222;
+}
+
+.box > .icon > .info > .more a {
+    font-size: 12px;
+    color: #222;
+    line-height: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.box > .icon:hover > .info > .more > a {
+    color: #fff;
+    padding: 6px 8px;
+    cursor: pointer;
+    box-shadow: 2px 0 10px #676767;
+}
+
+.box > .icon:hover > .info > .more-paper > a {
+    background-color: #63B76C;
+}
+
+.box > .icon:hover > .info > .more-ebook > a {
+    background-color: #525252;
+}
+
+.box > .icon:hover > .info > .more-pdf > a {
+    background-color: #dd4747;
+}
+
+.box > .icon:hover > .info > .more-kindle > a {
+    background-color: #cd7e23;
+}
+
+.box .space {
+    height: 20px;
+}
+
+/* Audio section */
+.col-md-4 {
+    padding-bottom: 30px;
+}
+
+/* Sample section */
+.col-lg-3 {
+    padding-bottom: 30px;
+}
+
+.shadowSection h4, .shadowSectionSample h4  {
+    color: black;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-bottom: 2%;
+}
+
+/* Title */
+.shadowSection h4 span, .shadowSectionSample h4 span{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.shadowSection, .shadowSectionSample {
+    position: relative;
+    background-color: rgb(255, 238, 198);
+    box-shadow: 2px 2px 20px #333333;
+    padding: 2% 0 3% 0;
+    color: rgba(0,0,0, .8);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+/*----- About me section -----*/
+/* Photo */
+.photo-author {
+    float: none;
+    display: inline-block;
+    *display: inline; /* ie7 fix */
+    *zoom: 1; /* hasLayout ie7 trigger */
+    height: 210px;
+    width: 210px;
+}
+
+.photo-container {
+    text-align: center;
+}
+
+.textAboutMe {
+    color: black;
+    position: relative;
+    padding: 5% 0 2% 0;
+}
+
+/* Author name */
+.textAboutMe h4 span{
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Description of the author */
+.description {
+    font-size: 13px;
+    line-height: 20px;
+}
+
+/* Contact form width */
+.contact-style {
+    position: relative;
+    padding: 1% 25% 2% 26%;
+}
+
+.control-label{
+    padding-bottom: 20px;
+}
+
+.form-group {
+    width: 100%;
+}
+
+.email2 { 
+    display: none !important; 
+}
+
+.contact-style input[type="text"],
+.contact-style input[type="email"],
+.contact-style textarea {
+    outline: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    background: #fff;
+    margin-bottom: 23px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    color: #555;
+    font: 95% Arial, Helvetica, sans-serif;
+}
+
+.contact-style textarea {
+    height: 150px;
+    padding: 10px 50px 50px 10px !important;
+    resize: none;
+}
+
+.contact-style input[type="text"]:focus,
+.contact-style input[type="email"]:focus,
+.contact-style textarea:focus {
+    box-shadow: 0 0 5px #ff606f;
+    border: 1px solid #ff606f;
+}
+
+.contact-style input[type="submit"],
+.contact-style input[type="button"]{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    padding: 30px;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    color: #fff;
+    background-color: #d9534f;
+    border-bottom: 5px solid #d43f3a;
+}
+
+.contact-style input[type="submit"]:hover,
+.contact-style input[type="button"]:hover{
+    color: #fff;
+    background-color: #c9302c;
+    border-bottom: 5px solid #ac2925;
+}
+
+.contact-style input[type="submit"]:focus,
+.contact-style input[type="button"]:focus{
+    color: #fff;
+    background-color: #c9302c;
+    border-bottom: 5px solid #761c19;
+}
+
+.contact-style input[type="submit"]:active:hover,
+.contact-style input[type="submit"].active:hover,
+.contact-style input[type="submit"]:active:focus,
+.contact-style input[type="submit"].active:focus {
+    color: #fff;
+    background-color: #ac2925;
+    border-color: #761c19;
+}
+
+.clickButton {
+    cursor: default;
+    box-shadow: none;
+}
+
+.validateButton {
+    cursor: pointer;
+    box-shadow: 1px 0 6px #333;
+}
+
+/* Efect shadow */
+/*
+.shadowSection:before, .shadowSection:after {
+    position: absolute;
+    content: "";
+    bottom: 15px;
+    left: 10px;
+    width: 50%;
+    top: 80%;
+    max-width:300px;
+    background: rgba(0, 0, 0, .7);
+    -webkit-box-shadow: 0 15px 10px rgba(0,0,0, .7);
+    -moz-box-shadow: 0 15px 10px rgba(0, 0, 0, .7);
+    box-shadow: 0 15px 10px rgba(0, 0, 0, .7);
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+    z-index: -1;
+}
+
+.shadowSection:after {
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    transform: rotate(3deg);
+    right: 10px;
+    left: auto;
+}
+*/
+
+/* Social Icons - About me section
+=================================================================== */
+
+.linkedin-hover {
+    background: url(../img/icons/socialButton/linkedin-hover.png) no-repeat 0 0;
+}
+
+.social-slide {
+    height: 48px;
+    width: 48px;
+    float: left;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+    /* Icons together */
+    margin: 0 !important;
+}
+
+.social-slide:hover {
+    background-position: 0 -48px;
+    box-shadow: 0 0 4px 1px rgba(0,0,0,0.8);
+    cursor: pointer;
+}
+
+#social {
+    display: table-cell;
+}
+
+#social a {
+    width: 28px;
+    height: 28px;
+    margin: 0 6px 6px 0;
+    display: block;
+    float: left;
+    text-indent: -9999px;
+    background-position: 0 0;
+}
+
+#social a:hover {
+    width: 28px;
+    height: 28px;
+    margin: 0 6px 6px 0;
+    display: block;
+    float: left;
+    text-indent: -9999px;
+    background-position: 0 -38px;
+}
+
+/* Social icons centered */
+#social,
+#social > li {
+    float: none;
+    display: inline-block;
+    *display: inline; /* ie7 fix */
+    *zoom: 1; /* hasLayout ie7 trigger */
+}
+
+.social-container {
+    text-align: center;
+    padding-top: 1%;
+}
+
+/* Warning message
+=================================================================== */
+
+.download-instruction {
+    text-align: center;
+    color: #000000;
+    font-weight: 500;
+    padding-bottom: 20%;
+}
+
+.download-warning-col {
+    padding: 0 5% 10px 5%;
+}
+
+.download-instruction-title {
+    text-align: center !important;
+    padding-bottom: 10px;
+    font-size: 15px;
+}
+
+.download-instruction-message {
+    font-size: 13px;
+}
+
+.alert {
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 15px;
+    position: relative;
+    padding: 14px 40px 14px 18px;
+    -webkit-box-shadow:  0 1px 1px 0 rgba(180, 180, 180, 0.1);
+    box-shadow:  0 1px 1px 0 rgba(180, 180, 180, 0.1);
+}
+
+.alert-error {
+    background-color: #fbfdf6 !important;
+    color: black !important;
+    border: 1px solid #000000 !important;
+}
+
+/* Back to top
+=================================================================== */
+
+.back-to-top {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    right: 20px;
+    bottom: 20px;
+    position: fixed;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    /* Image replacement properties */
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    background: rgba(232, 98, 86, 0.8) url(../img/cd-top-arrow.svg) no-repeat center 50%;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+    -moz-transition: opacity .3s 0s, visibility 0s .3s;
+    transition: opacity .3s 0s, visibility 0s .3s;
+}
+.back-to-top.cd-is-visible, .back-to-top.cd-fade-out, .back-to-top:hover {
+    -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+    -moz-transition: opacity .3s 0s, visibility 0s 0s;
+    transition: opacity .3s 0s, visibility 0s 0s;
+}
+.back-to-top.cd-is-visible {
+    /* The button becomes visible */
+    visibility: visible;
+    opacity: 1;
+}
+.back-to-top.cd-fade-out {
+    /* If the user keeps scrolling down, the button is out of focus and becomes less visible */
+    opacity: .5;
+}
+.back-to-top:hover {
+    background-color: #e86256;
+    opacity: 1;
+}
+
+/* Media queries for custom slider
+=================================================================== */
+
+@media (min-width: 980px) and (max-width: 1500px) {
+
+    #page-title h2, #page-title-buy h2, #page-title-sample h2, #page-title-aboutMe h2, #page-title-contact h2 {
+        font-size: 22px;
+        line-height: 90px;
+    }
+
+    /* Contact section */
+    #page-title-contact h2:before,
+    #page-title-contact h2:after {
+        width: 37%;
+    }
+
+    /* Contact form width */
+    .contact-style {
+        padding: 2% 20% 2% 22%;
+    }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+
+    #page-title h2, #page-title-buy h2, #page-title-sample h2, #page-title-aboutMe h2, #page-title-contact h2 {
+        font-size: 21px;
+        line-height: 86px;
+    }
+
+    /* Sample section */
+    #page-title-sample h2:before,
+    #page-title-sample h2:after {
+        width: 32%;
+    }
+
+    /* About me section */
+    #page-title-aboutMe h2:before,
+    #page-title-aboutMe h2:after {
+        width: 35%;
+    }
+
+    /* Photo */
+    .photo-author {
+        height: 190px;
+        width: 190px;
+    }
+
+    /* Warning message */
+    .download-warning-col {
+        padding: 0 6% 10px 6%;
+    }
+
+    /* Contact section */
+    #page-title-contact h2:before,
+    #page-title-contact h2:after {
+        width: 38%;
+    }
+
+    /* Contact form width */
+    .contact-style {
+        padding: 2% 12% 2% 15%;
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+
+    .divSample {
+        margin-top: 10px;
+    }
+
+    #page-title h2, #page-title-buy h2, #page-title-sample h2, #page-title-aboutMe h2, #page-title-contact h2 {
+        font-size: 19px;
+        line-height: 78px;
+    }
+
+    /* Audio section */
+    #page-title h2:before,
+    #page-title h2:after {
+        width: 36%;
+    }
+
+    /* Sample section */
+    #page-title-sample h2:before,
+    #page-title-sample h2:after {
+        width: 25%;
+    }
+
+    /* About me section */
+    #page-title-aboutMe h2:before,
+    #page-title-aboutMe h2:after {
+        width: 28%;
+    }
+
+    .textAboutMe {
+        padding: 7% 0 2% 0;
+    }
+
+    /* Photo */
+    .photo-author {
+        height: 170px;
+        width: 170px;
+    }
+
+    /* Warning message */
+    .download-instruction {
+        text-align: justify;
+    }
+
+    /* Warning message */
+    .download-warning-col {
+        padding: 0 7% 10px 7%;
+    }
+
+    /* Contact section */
+    #page-title-contact h2:before,
+    #page-title-contact h2:after {
+        width: 31%;
+    }
+
+    /* Contact form width */
+    .contact-style {
+        padding: 3% 12% 2% 15%;
+    }
+
+    /* Back top top */
+    .back-to-top {
+        height: 40px;
+        width: 40px;
+        right: 20px;
+        bottom: 20px;
+    }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+
+    #page-title h2, #page-title-buy h2, #page-title-sample h2, #page-title-aboutMe h2, #page-title-contact h2 {
+        font-size: 16px;
+        line-height: 66px;
+    }
+
+    /* Audio section */
+    #page-title h2:before,
+    #page-title h2:after {
+        width: 33%;
+    }
+
+    .col-md-4 {
+        padding-bottom: 25px;
+    }
+
+    /* Sample section */
+    #page-title-sample h2:before,
+    #page-title-sample h2:after {
+        width: 25%;
+    }
+
+    .col-lg-3 {
+        padding-bottom: 25px;
+    }
+
+    .shadowSection h4, .shadowSectionSample h4, .shadowSectionAboutMe h4  {
+        font-size: 13px;
+    }
+
+    /* Title */
+    .shadowSection h4 span, .shadowSectionSample h4 span, .shadowSectionAboutMe h4 span {
+        font-size: 14px;
+    }
+
+    /* About me section */
+    #page-title-aboutMe h2:before,
+    #page-title-aboutMe h2:after {
+        width: 28%;
+    }
+
+    .textAboutMe {
+        padding: 9% 0 2% 0;
+    }
+
+    /* Photo */
+    .photo-author {
+        height: 165px;
+        width: 165px;
+    }
+    /* Title */
+    .textAboutMe h4 span {
+        font-size: 14px;
+    }
+
+    /* Warning message */
+    .download-warning-col {
+        padding: 0 8% 10px 8%;
+    }
+
+    .download-instruction-title {
+        font-size: 13px;
+    }
+
+    /* Contact section */
+    #page-title-contact h2:before,
+    #page-title-contact h2:after {
+        width: 33%;
+    }
+
+    /* Contact form width */
+    .contact-style {
+        padding: 4% 5% 2% 12%;
+    }
+}
+
+/* Max width: 384 (Iphone 6 - 375), (Galaxy Note 2, 3, Galaxy S3, S4 - 360) */
+@media (max-width: 384px) {
+
+    #page-title h2, #page-title-buy h2, #page-title-sample h2, #page-title-aboutMe h2, #page-title-contact h2 {
+        font-size: 15px;
+        line-height: 60px;
+    }
+
+    /* Audio section */
+    #page-title h2:before,
+    #page-title h2:after {
+        width: 33%;
+    }
+
+    /* Sample section */
+    #page-title-sample h2:before,
+    #page-title-sample h2:after {
+        width: 22%;
+    }
+
+    /* About me section */
+    #page-title-aboutMe h2:before,
+    #page-title-aboutMe h2:after {
+        width: 26%;
+    }
+
+    /* Photo */
+    .photo-author {
+        height: 150px;
+        width: 150px;
+    }
+
+    /* Warning message */
+    .download-warning-col {
+        padding: 0 9% 10px 9%;
+    }
+    .download-instruction-title {
+        font-size: 12px;
+    }
+
+    /* Contact section */
+    #page-title-contact h2:before,
+    #page-title-contact h2:after {
+        width: 33%;
+    }
+
+    /* Contact form width */
+    .contact-style {
+        padding: 4% 3% 2% 12%;
+    }
+}
+
+/* Max width: 320 (Iphone 4,5)*/
+@media (max-width: 320px) {
+
+    #page-title h2, #page-title-buy h2, #page-title-sample h2, #page-title-aboutMe h2, #page-title-contact h2 {
+        font-size: 14px;
+        line-height: 56px;
+    }
+
+    /* Audio section */
+    #page-title h2:before,
+    #page-title h2:after {
+        width: 30%;
+    }
+
+    /* Sample section */
+    #page-title-sample h2:before,
+    #page-title-sample h2:after {
+        width: 17%;
+    }
+
+    /* About me section */
+    #page-title-aboutMe h2:before,
+    #page-title-aboutMe h2:after {
+        width: 21%;
+    }
+
+    /* Photo */
+    .photo-author {
+        height: 140px;
+        width: 140px;
+    }
+
+    /* Warning message */
+    .download-warning-col {
+        padding: 0 10% 10px 10%;
+    }
+
+    /* Contact section */
+    #page-title-contact h2:before,
+    #page-title-contact h2:after {
+        width: 30%;
+    }
+
+    /* Contact form width */
+    .contact-style {
+        padding: 4% 4% 2% 13%;
+    }
+}
+
+
+
+

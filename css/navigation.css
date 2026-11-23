@@ -1,0 +1,208 @@
+/*-------------------------------------------------------------------------------------------*
+*                                   NAVIGATION BAR CSS                                       *
+*-------------------------------------------------------------------------------------------*/
+
+/* Navigation bar
+=================================================================== */
+.navbar {
+    /* Transparent = rgba(0,0,0,0) / Translucent = (0,0,0,0.5)  */
+    background-color: rgba(255,253,250,0.45);
+    height: 70px;
+    -webkit-transition: all 1.5s ease-in-out;
+    -moz-transition: all 1.5s ease-in-out;
+    -o-transition: all 1.5s ease-in-out;
+    transition: all 1.5s ease-in-out;
+}
+
+/* Navbar-nav elements */
+.navbar-nav > li > a {
+    color: black;
+    font-size: 14px;
+    height: 70px;
+    display: table-cell;
+    vertical-align: middle;
+    font-weight: 800;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+    -webkit-transition: height 1.5s ease-in-out;
+    -moz-transition: height 1.5s ease-in-out;
+    -o-transition: height 1.5s ease-in-out;
+    transition: height 1.5s ease-in-out;
+}
+
+/* Hover and focus in navbar-nav elements */
+.navbar-nav > li > a:hover, .navbar-nav > li > a:focus {
+    background-color: rgba(205, 92, 92, 0.80);
+}
+
+/* Scroll > 100 */
+.opaque-navbar.opaque {
+    background-color: rgba(255,253,250, 0.95);
+    -webkit-transition: background-color 1.5s ease-in;
+    -moz-transition: background-color 1.5s ease-in;
+    -o-transition: background-color 1.5s ease-in;
+    transition: background-color 1.5s ease-in;
+}
+
+/* Scroll > 100 */
+.navbar.height-navbar {
+    height: 20px;
+    -webkit-transition: height 1.5s ease-in-out;
+    -moz-transition: height 1.5s ease-in-out;
+    -o-transition: height 1.5s ease-in-out;
+    transition: height 1.5s ease-in-out;
+}
+
+/* Scroll > 100 */
+.navbar-nav > li > a.text-navbar {
+    height: 20px;
+    -webkit-transition: height 1.5s ease-in-out;
+    -moz-transition: height 1.5s ease-in-out;
+    -o-transition: height 1.5s ease-in-out;
+    transition: height 1.5s ease-in-out;
+}
+
+/* Media queries for navigation bar
+=================================================================== */
+
+/* Center navbar  medium and large devices */
+@media (min-width: 768px) {
+
+    /* Navbar structure */
+    .navbar .nav,
+    .navbar .nav > li {
+        float: none;
+        display: inline-block;
+        *display: inline; /* ie7 fix */
+        *zoom: 1; /* hasLayout ie7 trigger */
+    }
+
+    .navbar-collapse {
+        text-align: center;
+    }
+
+    .container {
+        width: auto;
+    }
+}
+
+/* Landscape phones and down - Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+
+    /* Navbar */
+    .navbar {
+        background-color: rgba(255, 253, 250, 1);
+        height: 40px;
+        -webkit-transition: background-color 1s ease-in;
+        -moz-transition: background-color 1s ease-in;
+        -o-transition: background-color 1s ease-in;
+        transition: background-color 1s ease-in;
+    }
+
+    /* Navbar container */
+    .navbar-container {
+        padding-left: 0;
+    }
+
+    .container>.navbar-collapse {
+        margin-left: 0;
+    }
+
+    /* Menu list */
+    .navbar-header {
+        height: 41px;
+    }
+
+    .navbar-toggle {
+        margin-bottom: 0;
+    }
+
+    /* Navbar-nav elements */
+    .navbar-nav > li > a {
+        background-color: rgba(255, 253, 250, 1);
+        color: black;
+        display: block;
+        font-size: 13px;
+        text-align: left;
+        width: 45%;
+        height: 20%;
+        border: 1px solid indianred;
+    }
+
+    /* Hover and focus in navbar-nav elements */
+    .navbar-nav > li > a:hover, .navbar-nav > li > a:focus {
+        background-color: rgba(205, 92, 92, 0.98);
+        border: 1px solid rgba(255, 253, 250, 1);
+    }
+
+    /* Scroll > 60 */
+    .opaque-navbar.opaque {
+        background-color: rgba(255,253,250, 0.95);
+        -webkit-transition: background-color 1s ease-in;
+        -moz-transition: background-color 1s ease-in;
+        -o-transition: background-color 1s ease-in;
+        transition: background-color 1s ease-in;
+    }
+
+    /* Title ¿Hablamos? */
+    .titleHamburguer {
+        color: indianred;
+        font-size: 15px;
+        line-height: 55px;
+        width: 150px;
+        padding-left: 5%;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+
+    .titleHamburguer:active {
+        color: rgba(255, 0, 7, 0.76);
+    }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+
+    .titleHamburguer {
+        font-size: 14px;
+    }
+
+    /* Navbar-nav elements */
+    .navbar-nav > li > a {
+        font-size: 11px;
+        text-align: left;
+        width: 50%;
+    }
+}
+
+/* Max width: 384 (Iphone 6 - 375), (Galaxy Note 2, 3, Galaxy S3, S4 - 360) */
+@media (max-width: 384px) {
+
+    .titleHamburguer {
+        font-size: 13px;
+        padding-left: 7%;
+    }
+
+    /* Navbar-nav elements */
+    .navbar-nav > li > a {
+        font-size: 11px;
+        text-align: left;
+        width: 59%;
+    }
+}
+
+/* Max width: 320 (Iphone 4,5)*/
+@media (max-width: 320px) {
+
+    .titleHamburguer {
+        font-size: 13px;
+        padding-left: 7%;
+    }
+
+    /* Navbar-nav elements */
+    .navbar-nav > li > a {
+        font-size: 11px;
+        text-align: left;
+        width: 65%;
+    }
+}
