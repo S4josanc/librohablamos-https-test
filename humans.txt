@@ -1,0 +1,22 @@
+/* TEAM */
+
+	Software developer: Jesus Iglesias García
+	Linkedin: http://es.linkedin.com/in/jesusgiglesias
+	From: Madrid, Spain
+
+/* AUTHOR BOOK */
+
+	Bussines-Expert: Jose Luis Sanchez Melgarejo
+	Company: Akademia Eñe
+	Site: http://www.akademiaene.com/es
+	Linkedin: https://www.linkedin.com/in/jos%25C3%25A9-luis-s%25C3%25A1nchez-melgarejo-6485b031
+	Location: Bratislava, Slovakia.
+
+/* SITE */
+
+	Last update: 2018/03/22
+	Language: Spanish
+	Doctype: HTML5
+	Components: Modernizr, jQuery, Bootstrap, etc.
+	IDE: WebStorm
+   
